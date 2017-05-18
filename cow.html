@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="author" content="Zin Maung">
+        <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!--Shake Images Link -->
+        <link rel="stylesheet" type="text/css" href="css/csshake.css">   
+        <link href='//fonts.googleapis.com/css?family=Henny Penny' rel='stylesheet'>
+        <link href='//fonts.googleapis.com/css?family=Love Ya Like A Sister' rel='stylesheet'>
+        <link rel="stylesheet" href="css/main.css"/>       
+        <script src="myscript.js"></script>
+        <title>Cow</title>
+</head>
+<body> 
+<div id="cow">
+        <div class="parent">
+            <a class="Character Character-cow"> <img class="cow" src="http://www.clipartlord.com/wp-content/uploads/2014/04/cow15.png" width="120px" height="120px">
+                
+                <a href="index.html"><img class="goback" src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Go-previous.svg" width="100"><h4>Go Back</h4></a>
+                
+                <img class="egg" src="http://www.clipartlord.com/wp-content/uploads/2015/01/easter-egg7.png" width="50">
+                
+                <img class="horse" src="http://www.clipartlord.com/wp-content/uploads/2013/05/horse4.png" width="190">
+                
+                <img class="chick" src="http://www.clipartlord.com/wp-content/uploads/2014/10/chick3.png" width="30">
+                
+                <img class="rooster" src="http://www.clipartlord.com/wp-content/uploads/2013/02/rooster.png" width="100">   
+                
+                <img class="farmer" src="http://www.clipartlord.com/wp-content/uploads/2013/04/farmer.png" width="150"> 
+                
+                <img class="bird" src="http://www.clipartlord.com/wp-content/uploads/2016/05/bird17.png" width="80">
+                
+                <img class="pig" src="http://www.clipartlord.com/wp-content/uploads/2016/03/pig21.png" width="50">
+                
+                <p>Move your mouse around to find an Easter Egg</p>
+                
+                <img class="background" src="img/village.png" alt="background">                 
+            </a>
+        </div>
+</div>
+<!-- Scripts -->
+        <script type="text/javascript" src="js/TweenMax.min.js"></script>
+        <script type="text/javascript">
+            
+        (function(){
+                       
+            var mb1 = new TimelineMax();
+            mb1.from('.cow', 5, {top: 600, scale: 0.00001, opacity: 0, ease: Power4.easeIn, y: -100 })
+               .to('.cow', 5, {bottom: 0, scale: 0.0005, opacity: 1, ease: Power4.easeInOut, x: 350 })          
+        }());       
+        </script>          
+ </body>
+</html>
